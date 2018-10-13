@@ -32,6 +32,9 @@ cc_library(
         exclude = ["doc/**"],
     ) + ["port/port_config.h"],
     includes = ["include"],
+    deps = [
+        "@com_github_google_crc32c//:crc32c",
+    ],
 )
 
 [cc_test(

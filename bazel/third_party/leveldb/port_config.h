@@ -6,10 +6,10 @@
 #define STORAGE_LEVELDB_PORT_PORT_CONFIG_H_
 
 // Define to 1 if you have a definition for fdatasync() in <unistd.h>.
-#define HAVE_FUNC_FDATASYNC 0
+#define HAVE_FUNC_FDATASYNC 1
 
 // Define to 1 if you have Google CRC32C.
-#define HAVE_CRC32C 0
+#define HAVE_CRC32C 1
 
 // Define to 1 if you have Google Snappy.
 #define HAVE_SNAPPY 0
