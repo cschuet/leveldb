@@ -14,4 +14,4 @@ before_install:
 
 script:
 - bazel build @com_github_google_leveldb//:leveldb
-- bazel test @com_github_google_leveldb//...
+- bazel query 'kind(cc_.*, tests(@com_github_google_leveldb//...)) except(@com_github_google_leveldb//:db_db_test)' | xargs bazel test

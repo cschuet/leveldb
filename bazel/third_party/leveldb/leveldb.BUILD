@@ -30,7 +30,10 @@ cc_library(
     hdrs = glob(
         ["**/*.h"],
         exclude = ["doc/**"],
-    ) + ["port/port_config.h"],
+    ) + [
+        ":port_h",
+        ":port_config_h",
+    ],
     includes = ["include"],
     deps = [
         "@com_github_google_crc32c//:crc32c",
@@ -41,7 +44,7 @@ cc_library(
     name = src.replace("/", "_").replace(".cc", ""),
     srcs = [src],
     deps = [
-	":leveldb",
+        ":leveldb",
         "@com_google_googletest//:gtest_main",
     ],
 ) for src in glob(
