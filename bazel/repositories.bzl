@@ -49,6 +49,7 @@ def repositories():
     _maybe(
         native.http_archive,
         name = "com_github_cschuet_snappy",
+	sha256 = "a62d0fa46f3efb3cec7779d95bbf3320195d2f106d63db5a029eeebf0e7ec67f",
         strip_prefix = "snappy-7b7f8fc8e162bbf24ad31fa046d995703179a3be",
         urls = [
             "https://github.com/cschuet/snappy/archive/7b7f8fc8e162bbf24ad31fa046d995703179a3be.tar.gz",
