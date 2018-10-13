@@ -7,9 +7,10 @@ Add to your WORKSPACE
 ```
 http_archive(
     name = "com_github_cschuet_leveldb",
-    strip_prefix = "leveldb-ebf975ddd3bb3ee289d215211a402c20107546f3",
+    strip_prefix = "leveldb-aa785abf30e043110a6258eeefad25ae4d27f677",
+    sha256 = "b484e7a4777741c82d265d1192985d9e662b2e0a193638253ebb3060ac62890c",
     urls = [
-        "https://github.com/cschuet/leveldb/archive/ebf975ddd3bb3ee289d215211a402c20107546f3.tar.gz",
+        "https://github.com/cschuet/leveldb/archive/aa785abf30e043110a6258eeefad25ae4d27f677.tar.gz",
     ],
 )
 
