@@ -39,4 +39,6 @@ bazel test @com_github_google_leveldb//...
 
 ## Limitations
 * uses FDATASYNC
+* uses [Google Snappy](https://github.com/cschuet/snappy)
+* uses [Google crc32c](https://github.com/cschuet/crc32c)
 * assumes little endian
