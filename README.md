@@ -1,5 +1,7 @@
 # Bazel Build for [google/leveldb](https://github.com/google/leveldb)
 
+[![Build Status](https://travis-ci.org/cschuet/leveldb.svg?branch=master)](https://travis-ci.org/cschuet/leveldb)
+
 Add to your WORKSPACE
 
 ```
