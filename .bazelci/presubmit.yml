@@ -1,0 +1,7 @@
+---
+platforms:
+  ubuntu1604:
+    build_targets:
+    - "@com_github_google_leveldb//:leveldb"
+    test_targets:
+    - "@com_github_google_leveldb//..."
