@@ -12,7 +12,7 @@
 #define HAVE_CRC32C 1
 
 // Define to 1 if you have Google Snappy.
-#define HAVE_SNAPPY 0
+#define HAVE_SNAPPY 1
 
 // Define to 1 if your processor stores words with the most significant byte
 // first (like Motorola and SPARC, unlike Intel and VAX).

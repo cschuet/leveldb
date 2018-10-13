@@ -33,6 +33,5 @@ bazel test @com_github_google_leveldb//...
 ```
 
 ## Limitations
-* not using FDATASYNC
-* not using Google Snappy
+* uses FDATASYNC
 * assumes little endian

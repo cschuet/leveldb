@@ -2,6 +2,10 @@ licenses(["notice"])
 
 exports_files(["LICENSE"])
 
+package(
+    default_visibility = ["//visibility:public"],
+)
+
 genrule(
     name = "port_config_h",
     srcs = ["@com_github_cschuet_leveldb//bazel/third_party/leveldb:port_config.h"],
@@ -34,9 +38,10 @@ cc_library(
         ":port_h",
         ":port_config_h",
     ],
-    includes = ["include"],
+    includes = ["include", "."],
     deps = [
         "@com_github_google_crc32c//:crc32c",
+        "@com_github_google_snappy//:snappy",
     ],
 )
 

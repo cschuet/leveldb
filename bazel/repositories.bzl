@@ -47,6 +47,15 @@ def repositories():
     )
 
     _maybe(
+        native.http_archive,
+        name = "com_github_cschuet_snappy",
+        strip_prefix = "snappy-7b7f8fc8e162bbf24ad31fa046d995703179a3be",
+        urls = [
+            "https://github.com/cschuet/snappy/archive/7b7f8fc8e162bbf24ad31fa046d995703179a3be.tar.gz",
+        ],
+    )
+
+    _maybe(
         native.new_http_archive,
 	name = "com_github_google_leveldb",
 	build_file = "@com_github_cschuet_leveldb//bazel/third_party/leveldb:leveldb.BUILD",
