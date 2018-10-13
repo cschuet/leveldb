@@ -5,14 +5,17 @@ Add to your WORKSPACE
 ```
 http_archive(
     name = "com_github_cschuet_leveldb",
-    sha256 = "ed9d0a7d2648bcbbc89556562622f4fe1adf49fa8564fd859934636e2d78a06c",
-    strip_prefix = "leveldb-9b605d3be7938b378a8110e481933b531e8e22b0",
+    strip_prefix = "leveldb-f000a5e470deee5b825765b2ec4d8e77db0e9504",
     urls = [
-        "https://github.com/cschuet/leveldb/archive/9b605d3be7938b378a8110e481933b531e8e22b0.tar.gz",
+        "https://github.com/cschuet/leveldb/archive/f000a5e470deee5b825765b2ec4d8e77db0e9504.tar.gz",
     ],
 )
 
 load("@com_github_cschuet_leveldb//:bazel/repositories.bzl", "repositories")
+
+repositories()
+
+load("@com_github_cschuet_crc32c//:bazel/repositories.bzl", "repositories")
 
 repositories()
 ```
